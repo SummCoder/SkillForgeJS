@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>吃豆人</title>
+    <link rel="icon" href="https://www.webretrogames.com/assets/img/pacman-logo-wide.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        .mod-game {
+            width: 960px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .mod-game h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .mod-game p {
+            color: #666;
+            text-align: center;
+        }
+
+        canvas {
+            display: block;
+            background: #000;
+            margin: 20px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .info p {
+            color: #999;
+        }
+
+        .controls {
+            text-align: center;
+        }
+
+        .controls button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mod-game">
+        <h1>Pacman</h1>
+        <p>使用方向键来移动吃豆人，避开幽灵，吃掉所有的豆子!</p>
+        <!-- 主体画布用以呈现游戏！ -->
+        <canvas id="game-canvas" width="960" height="640">
+            不支持画布！
+        </canvas>
+        <div class="info">
+            <p>按空格键暂停或继续！</p>
+        </div>
+        <div class="controls">
+            <button id="start-button">开始游戏</button>
+            <button id="pause-button">暂停游戏</button>
+            <button id="reset-button">重新开始</button>
+        </div>
+    </div>
+    <!-- js文件用以控制交互 -->
+    <script src="index.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>
