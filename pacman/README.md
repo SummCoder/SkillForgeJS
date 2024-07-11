@@ -2,6 +2,8 @@
 
 JS基础篇：吃豆人
 
+可访问 https://magic026.github.io/ 进行在线体验。
+
 参考[passer-by.com](https://passer-by.com/) 制作。
 
 使用文心快码 BAIDU COMATE进行辅助编程。
