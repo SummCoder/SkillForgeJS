@@ -355,7 +355,7 @@ class Stage {
             });
         }
         // 绑定事件作用域，修正为传递回调函数本身
-        Game._events[eventType]['s' + this.index] = callback;
+        Game._events[eventType]['s' + this.index] = callback.bind(this);
     }
     
 
